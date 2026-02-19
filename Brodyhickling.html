@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<style>
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	border 100vh solid green;
+}
+</style>
+<div class="center">
+<head>
+<style>
+body {
+  background-image: url('hypno.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+<h1 id="secretContent1" class="hidden below">
+HE'S A PRED!!!!!
+	<img src="emoji-shock.gif">
+</h1>
+
+<title>HeMightBeAPred</title>
+
+<style>
+.button {
+	background-color: #FF0000;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 4px;
+	cursor: pointer;
+	position: absolute;
+	z-index: 2;
+	left: 1200px;
+}
+
+.button1 {border-radius: 50%;}
+
+.speech-bubble {
+    position: relative; /* Essential for positioning the tail */
+    background: #007bff; /* Bubble background color */
+    color: white;
+    font-family: Arial, sans-serif;
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    max-width: 200px; /* Adjust size as needed */
+    margin: 20px; /* Add some margin around the bubble */
+	text-align: center;
+	max-height: 50px;
+	top: 160px;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    top: -20px; /* Position the tail at the bottom */
+   left: 100px; /* Adjust the horizontal position */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    /* Create a triangle using borders */
+    border-width: 10px 10px 10px 10px;
+    border-color: transparent transparent #007bff transparent;
+}
+
+.pic {
+	position: absolute;
+	top: 200px
+}
+
+.below {
+	position: absolute;
+	top: 50px;
+	color: red;
+}
+
+</style>
+</head>
+<body>
+
+<img src="Brody.jpg" alt="brody" class="pic">
+
+<style>
+    .hidden {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+</style>
+
+<button class="button button1"; onclick="toggleVisibility(); toggleVisibility1(); playMusic()">Click Me!</button>
+<script src="script.js"></script>
+<div id="secretContent" class="speech-bubble hidden center">
+    <p>I am a Predator!!!</p>
+</div>
+
+<script>
+    function toggleVisibility() {
+        const content = document.getElementById('secretContent');
+        content.classList.toggle('hidden');
+        content.classList.toggle('show');
+    }
+	function toggleVisibility1() {
+		const content = document.getElementById('secretContent1');
+        content.classList.toggle('hidden');
+        content.classList.toggle('show');
+	}
+</script>
+
+
+</body>
+</div>
+</html>
