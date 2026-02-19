@@ -1,4 +1,5 @@
 function playMusic() {
-    var music = new Audio('iam.mp3');
+    var music = new Audio('Audio/iam.mp3');
     music.play();
 }
+
